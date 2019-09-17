@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>JSD16 - Configuring Git to use Multiple Accounts (Win)</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/styles.css">
+        <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+      <div class="container pad">
+        <!--[if lt IE 7]>
+          <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="container blueheader">
+          <h1>Configuring Git to use Multiple Accounts (Win)</h1>
+        </div>
+
+        <div class="light-blue-bg container push-bottom">
+          <p>If you use multiple accounts with Git (for instance, a work or personal GitHub account in addition to your GA GitHub Enterprise account), you need to configure git a bit differently than the default instructions outlined on github.com. Use this page as your guide for finishing your GitHub Enterprise setup.</p>
+          <ul>
+            <li>Log into your account at <a href="https://git.generalassemb.ly">https://git.generalassemb.ly</a></li>
+            <li>Follow these steps to create a new <em>SSH Key</em> (a special, very secure, key which allows your laptop access to your github account without having to remember your github
+            password). </li>
+          </ul>
+<!--           
+          (Modified version of <a href="https://help.github.com/enterprise/2.15/user/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/">these instructions</a>)
+ -->
+          <h3>Generating a new SSH key</h3>
+          <ol>
+            <li>Open Git Bash.</li>
+            <li>Paste the text below, substituting in your GitHub Enterprise email address.
+              <p><code>ssh-keygen -t rsa -b 4096 -C "your_email@example.com"</code></p>
+              <p>This creates a new ssh key, using the provided email as a label.</p>
+            </li>
+            <li>When you're prompted to "Enter a file in which to save the key," type 
+              <p><code>/c/Users/[username]/.ssh/id_rsa_ga</code></p>
+              <p>where <code>[username]</code> is your Windows username, and then press <strong>Enter</strong>.
+            </li>
+            <li>At the prompt, type a secure passphrase. For more information, see <a href="https://help.github.com/enterprise/2.15/user/articles/working-with-ssh-key-passphrases">"Working with SSH key passphrases"</a>.</li>
+          </ol>
+
+          <h3>Adding your SSH key to the ssh-agent</h3>
+          <ol>
+            <li>If you're NOT using Git Bash, paste the text below to start the ssh-agent in the background.
+              <p><code>eval "$(ssh-agent -s)"</p></code>
+              <p>The output should be <code>Agent pid</code> followed by some numbers.
+            </li>
+            <li>In your editor, navigate to the <code>c:\Program Files\Git\etc\ssh\</code> folder, then open the file named <code>ssh_config</code> (if this file doesn't exist, go to the terminal, run <code>touch c:\Program Files\Git\etc\ssh\ssh_config</code>, then open the file in your editor.)</li>
+            <li>Add a second entry to your file using the following as a template:
+  <pre><code class="bash language-bash">
+    # my GitHub account 
+    Host personal
+      HostName github.com
+      User git
+      AddKeysToAgent yes
+      UseKeychain yes
+      IdentityFile ~/.ssh/id_rsa
+      IdentitiesOnly yes
+    
+    # GA github Enterprise
+    Host GA   
+      HostName git.generalassemb.ly
+      User git
+      AddKeysToAgent yes
+      UseKeychain yes
+      IdentityFile ~/.ssh/id_rsa_ga
+      IdentitiesOnly yes
+    
+    # wildcard
+    Host *
+      AddKeysToAgent yes
+      UseKeychain yes
+  </code></pre>
+            </li>
+            <li>Save your changes</li>
+            <li>Paste the text below to add your SSH private key to the ssh-agent and store your passphrase in the keychain. (If you used a name other than id_rsa_ga in the steps above, be sure to use that name here as well.)
+              <p><code>ssh-add ~/.ssh/id_rsa_ga</code></p>
+            </li>
+        
+            <li>Add your new SSH Key to GitHub Enterprise following <a href="https://help.github.com/enterprise/2.15/user/articles/adding-a-new-ssh-key-to-your-github-account/">these
+            instructions</a></li>
+            
+            <li>Verify your key works by running the following:
+              <p><code>ssh -T git@git.generalassemb.ly</code></p>
+              <p>You should see output similar to:</p>
+              <p><code>
+              Hi &lt;you&gt;! You've successfully authenticated, but GitHub does not provide shell access.
+              Connection to git.generalassemb.ly closed.
+              </code></p>
+            </li>
+          </ol>
+        </div>
+      </div>        
+    </body>
+</html>

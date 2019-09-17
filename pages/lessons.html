@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GA SF JSD 16 Lessons</title>
+	<link rel="stylesheet" href="../css/font-awesome.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/styles.css">
+	<link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico" />
+ 	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+	<nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="../index.html">
+					<img src="../img/ga-logo.png" width="20" heigh="20" alt="general assembly logo">
+				</a>
+			</div>
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li><a href="../index.html">Home</a></li>
+						<li class="active"><a href="lessons.html">Lessons</a></li>
+						<li><a href="homework.html">Homework</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="projects.html">Projects Overview</a></li>
+								<li role="separator" class="divider"></li>
+								<li><a href="slackbot.html">Slackbot</a></li>
+								<li><a href="feedr.html">Feedr</a></li>
+								<li><a href="final-project.html">Final</a></li>
+							</ul>
+						</li>
+						<li><a href="resources.html">Resources</a></li>
+            <li><a href="https://forms.gle/VFdKNdkpKHp3kkdL8">Exit ticket</a></li>
+            <li><a href="https://jsdsnacks.youcanbook.me">Snack signup</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<header>
+		<div class="blueheader">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h1>LESSONS</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="overview">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h3 class="text-center">Below you will find notes for each of JSD's twenty classes. Please note that this page is a working document: it will be updated frequently in order to tailor the notes for each particular class.
+						</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+
+	<div class="container pad-top pad-bottom">
+		<div class="row">
+			<div class="col-md-12 grey-button-row">
+				<a href="#week-one">
+					<div class="grey-button"><h5>WEEK 1</h5></div>
+				</a>
+				<a href="#week-two">
+					<div class="grey-button"><h5>WEEK 2</h5></div>
+				</a>
+				<a href="#week-three">
+					<div class="grey-button"><h5>WEEK 3</h5></div>
+				</a>
+				<a href="#week-four">
+					<div class="grey-button"><h5>WEEK 4</h5></div>
+				</a>
+			</div>
+			<div class="col-md-12 grey-button-row">		
+				<a href="#week-five">
+					<div class="grey-button"><h5>WEEK 5</h5></div>
+				</a>
+				<a href="#week-six">
+					<div class="grey-button"><h5>WEEK 6</h5></div>
+				</a>
+				<a href="#week-seven">
+					<div class="grey-button"><h5>WEEK 7</h5></div>
+				</a>
+				<a href="#week-eight">
+					<div class="grey-button"><h5>WEEK 8</h5></div>
+				</a>
+			</div>
+			<div class="col-md-12 grey-button-row">
+				<a href="#week-nine">
+					<div class="grey-button"><h5>WEEK 9</h5></div>
+				</a>
+				<a href="#week-ten">
+					<div class="grey-button"><h5>WEEK 10</h5></div>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- UNIT 1 -->
+	<hr class="push-top push-bottom">
+	<h2 class="push-bottom">Unit 1: Fundamentals of JavaScript</h2>
+
+	<section class="light-blue-bg">
+
+		<!-- WEEK ONE -->
+		<div class="container" id="week-one">
+			<div class="row">
+				<div class="col-md-2">
+					<div class="week-marker">Week 01</div>
+				</div>
+				<div class="col-md-10 col-xs-12 info-card push-bottom">
+					<div class="class-date">CLASS 00 (09/17/19)</div>
+					<h3>Installfest</h3>
+					<ul>
+						<li>Client-server model &amp; DNS</li>
+						<li>Command-line tools</li>
+						<li>Pseudocode</li>
+					</ul>
+					<!-- <hr>
+					<h4>Materials</h4>
+					<ul>
+						<li><a href="../slides/JSD-00-installfest-slides.pdf">Class 00 Slides</a></li>
+						<li><a href="../resources/mac-install.html">Mac Configuration Instructions</a></li>
+						<li><a href="../resources/windows-install.html">Windows Configuration Instructions</a></li>
+						<li><a href="../resources/linux-install.html">Linux Configuration Instructions</a></li>
+					</ul>
+					<hr>
+					<h4>Resources</h4>
+					<ul>
+						<li><a href="https://netforbeginners.about.com/od/i/f/What-Is-The-Internet.htm">What is the Internet?</a></li>
+						<li><a href="https://code.tutsplus.com/tutorials/http-the-protocol-every-Web-developer-must-know-part-1--net-31177">About the HTTP protocol</a></li>
+						<li><a href="https://www.youtube.com/watch?v=72snZctFFtA">&#127909; DNS Explained (video)</a></li>
+						<li><a href="https://www.youtube.com/watch?v=ip0JSUgU4os">&#127909; Domains and the Domain Name System (video)</a></li>
+						<li><a href="https://www.youtube.com/watch?v=4G0EYfrrDT8">&#127909; Writing Pseudocode (video)</a></li>
+					</ul> -->
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-10 col-md-offset-2 info-card push-bottom">
+					<div class="class-date">CLASS 01 (09/19/19)</div>
+					<h3>Command line &amp; data types</h3>
+					<ul>
+						<li>Command line navigation</li>
+						<li>Initialize Git repo</li>
+						<li>Run JS at the command line</li>
+						<li>Numbers &amp; strings</li>
+          </ul>
+					<!-- <hr>
+					 <h4>Materials</h4>
+					<ul> 
+						<li><a href="../slides/JSD-01-command-line-slides.pdf">Class 01 Slides</a></li>
+						<li><a href="../resources/JSD-01-command-line-handout.pdf">Handout - Command Line, Data Types, &amp; Git</a></li>
+						<li><a href="../resources/command-line-exercise.html">Command line exercise instructions</a></li>
+					</ul>
+					<hr>
+					<h4>Resources</h4>
+					<ul>
+						<li><a href="https://mdn.io/let"><code>let</code> reference</a></li>
+						<li><a href="https://mdn.io/Arithmetic_Operators">Arithmetic operators reference</a></li>
+						<li><a href="https://mdn.io/Assignment_Operators">Assignment operators reference</a></li>
+						<li><a href="https://mdn.io/typeof"><code>typeof</code> operator reference</a></li>
+						<li><a href="https://mdn.io/Math"><code>Math</code> object reference</a></li>
+            <li><a href="https://www.applegazette.com/mac/customize-terminal-macos/">Customize Terminal on macOS</a></li>
+            <li><a href="https://medium.freecodecamp.org/the-definitive-node-js-handbook-6912378afc6e">The Definitive Node.js Handbook</a> (online, free)</li>
+						<li><a href="https://martinfowler.com/bliki/InversionOfControl.html">More on Libraries vs Frameworks</a></li>
+						<li><a href="https://stackoverflow.com/questions/3057526/framework-vs-toolkit-vs-library">Framework vs Toolkit vs Library</a></li>
+						<li><a href="https://rogerdudler.github.io/git-guide/files/git_cheat_sheet.pdf">Git Cheat Sheet</a></li>
+            <li><a href="https://pages.github.com">Setting up GitHub Pages</a></li>
+            <li><a href="https://youtu.be/2MsN8gpT6jY">&#127909; What is GitHub Pages? (video)</a></li>          
+            <li>
+							<a href="https://www.youtube.com/watch?v=FyfwLX4HAxM&list=PLg7s6cbtAD15G8lNyoaYDuKZSKyJrgwB-">&#127909; Get up and running with GitHub (video playlist)</a>
+							<ul>
+								<li><a href="https://www.youtube.com/watch?v=FyfwLX4HAxM&index=1&list=PLg7s6cbtAD15G8lNyoaYDuKZSKyJrgwB-">&#127909; Intro</a></li>
+								<li><a href="https://www.youtube.com/watch?v=7Inc0G0wutk&list=PLg7s6cbtAD15G8lNyoaYDuKZSKyJrgwB-&index=2">&#127909; Setup</a></li>
+								<li><a href="https://www.youtube.com/watch?v=ZChtKFLiaNw&index=3&list=PLg7s6cbtAD15G8lNyoaYDuKZSKyJrgwB-">&#127909; Config</a></li>
+								<li><a href="https://www.youtube.com/watch?v=WxMFZncm12s&list=PLg7s6cbtAD15G8lNyoaYDuKZSKyJrgwB-&index=4">&#127909; Init</a></li>
+								<li><a href="https://www.youtube.com/watch?v=A-Cll9jEnnM&index=5&list=PLg7s6cbtAD15G8lNyoaYDuKZSKyJrgwB-">&#127909; Commit</a></li>
+							</ul>
+						</li>
+						<li><a href="https://www.youtube.com/playlist?list=PLWKjhJtqVAbmfoj2Th9fvxhHIeqFO7wOy">&#127909; Computer Science and Software Engineering Theory with Briana (video playlist)</a>
+              <ul>
+                <li><a href="https://www.youtube.com/watch?v=NFaZKFTycmc&amp;index=23&amp;list=PLWKjhJtqVAbmfoj2Th9fvxhHIeqFO7wOy">&#127909; JavaScript lingo: MDN and Documentation (video)</a></li>
+                <li><a href="https://www.youtube.com/watch?v=fahY2YY5Atg&amp;index=22&amp;list=PLWKjhJtqVAbmfoj2Th9fvxhHIeqFO7wOy">&#127909; JavaScript lingo: Value Types (video)</a></li>
+                <li><a href="https://www.youtube.com/watch?v=NJhXiR1z7Kg&amp;list=PLWKjhJtqVAbmfoj2Th9fvxhHIeqFO7wOy&amp;index=24">&#127909; JavaScript lingo: Variables &amp; camelCase (video)</a></li>
+                <li><a href="https://www.youtube.com/watch?v=pyU5zV4tIL4&amp;index=28&amp;list=PLWKjhJtqVAbmfoj2Th9fvxhHIeqFO7wOy">&#127909; JavaScript lingo: Math (video)</a></li>
+              </ul>
+						</li>
+          </ul> -->
+				</div>
+			</div>
+		</div>
+		
+		<!-- WEEK TWO -->
+		<div class="container" id="week-two">
+			<div class="row">
+				<div class="col-md-2">
+					<div class="week-marker">Week 02</div>
+				</div>
+				<div class="col-md-10 col-xs-12 info-card push-bottom">
+					<div class="class-date">CLASS 02 (09/24/19)</div>
+					<h3>Arrays &amp; Loops</h3>
+					<ul>
+						<li>Arrays</li>
+            <li>Variables</li>
+            <li><code>for</code> loops</li>
+					</ul>
+					<!-- <hr>
+					<h4>Materials</h4>
+					<ul>
+						<li><a href="../slides/JSD-02-arrays-loops-slides.pdf">Class 02 Slides</a></li>
+						<li><a href="../resources/JSD-02-arrays-loops-handout.pdf">Handout - Arrays &amp; Loops</a></li>
+					</ul>
+					<hr>
+					<h4>Resources</h4>
+					<ul>
+            <li><a href="https://mdn.io/Array">Overview of arrays and array methods</a></li>
+            <li><a href="https://codepen.io/sdras/pen/gogVRX/">Array Explorer</a> (a tool to help you identify the array method you need for what you're trying to do)</li>
+						<li><a href="https://stackoverflow.com/questions/1094723/what-is-array-literal-notation-in-javascript-and-when-should-you-use-it">Array literals vs the <code>new</code> keyword</a></li>
+            <li><a href="https://mdn.io/for"><code>for</code> loop (MDN)</a></li>
+            <li><a href="https://mdn.io/Loops_and_iteration">Loops &amp; Iteration (MDN)</a></li>
+            <li><a href="https://mdn.io/A_re-introduction_to_JavaScript">Overview of data types &amp; arrays as well as other fundamental JS concepts</a></li>
+						<li>
+							Best practices from the AirBnB JavaScript Style Guide:
+							<ul>
+								<li><a href="https://github.com/airbnb/javascript#arrays">Arrays</a></li>
+								<li><a href="https://github.com/airbnb/javascript#strings">Strings</a></li>
+								<li><a href="https://github.com/airbnb/javascript#variables">Variables</a></li>
+								<li><a href="https://github.com/airbnb/javascript#naming-conventions">Naming conventions</a></li>
+								<li><a href="https://github.com/airbnb/javascript#blocks">Blocks</a></li>
+								<li><a href="https://github.com/airbnb/javascript#comments">Comments</a></li>
+							</ul>
+            </li>
+            <li><a href="https://www.youtube.com/watch?v=hfBgPKxN2HE">&#127909; Loops, conditionals, <code>this</code>, and <code>return</code> (video)</a></li>
+						<li><a href="https://www.youtube.com/playlist?list=PLWKjhJtqVAbmfoj2Th9fvxhHIeqFO7wOy">&#127909; Computer Science and Software Engineering Theory with Briana (video playlist)</a>
+              <ul>
+                <li><a href="https://www.youtube.com/watch?v=FACqPCLxPTY&amp;list=PLWKjhJtqVAbmfoj2Th9fvxhHIeqFO7wOy&amp;index=26">&#127909; JavaScript lingo: Finding and Indexing Data in Arrays (video)</a></li>
+                <li><a href="https://www.youtube.com/watch?v=Hzzmqhc3U0o&amp;index=29&amp;list=PLWKjhJtqVAbmfoj2Th9fvxhHIeqFO7wOy">&#127909; JavaScript lingo: Loops (video)</a></li>
+              </ul>
+						</li>
+					</ul> -->
+				</div>
+      </div>
+
+      <div class="row">
+				<div class="col-md-10 col-md-offset-2 info-card push-bottom">
+					<div class="class-date">CLASS 03 (09/26/19)</div>
+          <h3>Conditionals &amp; Functions</h3>
+          <ul>
+            <li><code>if/else</code> statements</li>
+            <li>Boolean logic</li>
+            <li>Truthy and falsy values</li>
+            <li>Function declarations, function expressions, and arrow functions</li>
+            <li>Parameters and arguments</li>
+          </ul>
+          <!-- <hr>
+          <h4>Materials</h4>
+          <ul>
+            <li><a href="../slides/JSD-03-conditionals-functions-slides.pdf">Class 03 Slides</a></li>
+            <li><a href="../resources/JSD-03-conditionals-functions-handout.pdf">Handout - Conditionals &amp; Functions</a></li>
+          </ul> 
+          <hr>
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="https://mdn.io/Comparison_Operators">Comparison operators reference</a></li>
+            <li><a href="https://mdn.io/if...else"><code>if/else</code> reference</a></li>
+            <li><a href="https://mdn.io/Logical_Operators">Logical operators reference</a></li>
+            <li><a href="https://mdn.io/Control_flow_and_error_handling">Control Flow</a></li>
+            <li><a href="https://mdn.io/Strict_mode">Strict mode</a></li>
+            <li><a href="https://mdn.io/Functions">Functions</a></li>
+            <li>
+              Best practices from the AirBnB JavaScript Style Guide:
+              <ul>
+                <li><a href="https://github.com/airbnb/javascript#comparison-operators--equality">Equality operators</a></li>
+                <li><a href="https://github.com/airbnb/javascript#blocks">Blocks</a></li>
+                <li><a href="https://github.com/airbnb/javascript#type-casting--coercion">Type Casting &amp; Coercion</a></li>
+                <li><a href="https://github.com/airbnb/javascript#control-statements">Conditionals</a></li>
+                <li><a href="https://github.com/airbnb/javascript#functions">Functions</a></li>
+                <li><a href="https://github.com/airbnb/javascript#arrow-functions">Arrow functions</a></li>
+              </ul>
+            </li>
+            <li><a href="https://youtu.be/vZAm3Ve9CGM">&#127909; Manipulating data (video)</a></li>
+            <li><a href="https://www.youtube.com/watch?v=8n2j__EBgpc">&#127909; Let&#39;s learn functions (video)</a></li>
+          </ul> -->
+				</div>
+			</div>
+    </div>
+
+		<!-- WEEK THREE -->
+		<div class="container" id="week-three">
+			<div class="row">
+				<div class="col-md-2">
+					<div class="week-marker">Week 03</div>
+				</div>
+        <div class="col-md-10 col-xs-12 info-card push-bottom">
+          <div class="class-date">CLASS 04 (10/01/19)</div>
+					<h3>Scope &amp; Objects</h3>
+					<ul>
+						<li>Global, local, and block scope</li>
+            <li><code>let</code>, <code>var</code>, and <code>const</code></li>
+            <li>Hoisting</li>
+            <li>Working with objects</li>
+					</ul>
+					<!-- <hr>
+					<h4>Materials</h4>
+					<ul>
+						<li><a href="../slides/JSD-04-scope-objects-slides.pdf">Class 04 Slides</a></li>
+            <li><a href="../resources/JSD-04-scope-objects-handout.pdf">Handout - Scope &amp; Objects</a></li>
+            <li><a href="../resources/JSD-submitting-homework.pdf">Handout - Submitting Homework</a></li>
+          </ul>
+					<hr>
+					<h4>Resources</h4>
+					<ul>
+            <li><a href="https://www.adequatelygood.com/JavaScript-Scoping-and-Hoisting.html">JavaScript Scoping and Hoisting</a></li>
+						<li><a href="https://mdn.io/let"><code>let</code> (MDN)</a></li>
+						<li><a href="https://mdn.io/const"><code>const</code> (MDN)</a></li>
+            <li><a href="https://mdn.io/var"><code>var</code> (MDN)</a></li>
+						<li><a href="https://stackoverflow.com/questions/762011/let-keyword-vs-var-keyword-in-javascript#11444416"><code>let</code> vs <code>var</code> (StackOverflow)</a></li>
+            <li><a href="https://mdn.io/Working_with_Objects">Working with Objects (MDN)</a></li>
+            <li><a href="https://javascript.info/tutorial/objects">JavaScript Tutorial: Objects</a></li>
+            <li><a href="https://mdn.io/Object-oriented_JS">Introduction to Object-Oriented JavaScript (MDN)</a></li>
+            <li>
+              Best practices from the AirBnB JavaScript Style Guide:
+              <ul>
+                <li><a href="https://github.com/airbnb/javascript#variables">Variables</a></li>
+                <li><a href="https://github.com/airbnb/javascript#hoisting">Hoisting</a></li>
+                <li><a href="https://github.com/airbnb/javascript#objects">Objects</a></li>
+              </ul>
+            </li>
+            <li><a href="https://www.youtube.com/watch?v=yHLGUxt0EKc">&#127909; JavaScript lingo: Arrays &amp; Objects (video)</a></li>
+          </ul>	 -->
+        </div>
+        <div class="col-md-10 col-md-offset-2 info-card push-bottom">
+					<div class="class-date">CLASS 05 (10/03/19)</div>
+					<h3>Slackbot Lab</h3>
+					<ul>
+						<li>Setting up Hubot and Heroku tools</li>
+						<li>Building using the Hubot framework</li>
+					</ul>
+					<!-- <hr>
+ 					<h4>Materials</h4>
+					<ul>
+						<li><a href="../slides/JSD-05-slackbot-lab-slides.pdf">Class 05 Slides</a></li>
+						<li><a href="../resources/JSD-05-slack-bots-handout.pdf">Handout - Slack Bots</a></li>
+          </ul>
+					<hr>
+					<h4>Resources</h4>
+					<ul>
+            <li><a href="../pages/slackbot.html">Project 1: Slackbot overview</a></li>
+            <li><a href="https://git.generalassemb.ly/vodnik/JS-SF-15-resources/blob/master/05-slackbot-lab/1-slack-bot-install-guide.md">Slack Bot Lab - Install Guide</a></li>
+            <li><a href="https://git.generalassemb.ly/vodnik/JS-SF-15-resources/blob/master/05-slackbot-lab/2-slack-bot-code-samples.md">Slack Bot Lab - Sample Code</a></li>
+            <li><a href="https://git.generalassemb.ly/vodnik/JS-SF-15-resources/blob/master/05-slackbot-lab/3-slack-bot-testing.md">Slack Bot Lab - Testing</a></li>
+            <li><a href="https://git.generalassemb.ly/vodnik/JS-SF-15-resources/blob/master/05-slackbot-lab/4-slack-bot-troubleshooting.md">Slack Bot Lab - Troubleshooting</a></li>
+            <li><a href="https://hubot.github.com">Hubot Overview</a></li>
+            <li><a href="https://hubot.github.com/docs">Hubot Documentation</a></li>
+            <li><a href="https://hubot.github.com/docs/scripting/">Hubot methods, with sample code</a></li>
+						<li><a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">Markdown Cheatsheet</a></li>
+						<li><a href="https://guides.github.com/features/mastering-markdown/">Mastering Markdown</a></li>
+					</ul> -->
+				</div>
+			</div>
+    </div>
+
+  </section>
+  <!-- UNIT 2 -->
+  <h2 class="push-top push-bottom">Unit 2: The Browser and APIs</h2>
+  <section class="light-blue-bg push-top">
+
+    <!-- WEEK FOUR -->
+    <div class="container" id="week-four">
+      <div class="row">
+        <div class="col-md-2">
+          <div class="week-marker">Week 04</div>
+        </div>
+        <div class="col-md-10 col-xs-12 info-card push-bottom">
+					<div class="class-date">CLASS 06 (10/08/19)</div>
+          <h3>JSON & Intro to the DOM</h3>
+          <ul>
+            <li>JSON syntax and parsing</li>
+            <li>Document Object Model vs HTML code</li>
+          </ul>
+          <!-- <hr>
+          <h4>Materials</h4>
+          <ul>
+            <li><a href="../slides/JSD-06-json-dom-slides.pdf">Class 06 Slides</a></li>
+            <li><a href="../resources/JSD-06-json-dom-handout.pdf">Handout - Objects &amp; JSON</a></li>
+          </ul>
+          <hr>
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="http://jsonlint.com/">JSONLint</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/JSON">JSON (Wikipedia)</a></li>
+            <li><a href="https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2">Bracket Pair Colorizer 2 extension for VS Code</a></li>
+            <li><a href="https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa">JSON Formatter extension for Chrome</a></li>
+            <li><a href="https://www.youtube.com/watch?v=BGfmpvM4Zp0">&#127909; What is JSON? (video)</a></li>
+          </ul>
+          <hr>
+          <h4>Optional CSS refresher</h4>
+          <p><a href="https://www.khanacademy.org/computing/computer-programming/html-css/intro-to-css/e/quiz--simple-css-selectors">Using Simple CSS Selectors quiz</a> (Khan Academy) -- use hint/explanation links if you're not sure</p> -->
+				</div>
+
+
+        <div class="container">
+          <div class="row">
+            <div class="col-md-10 col-md-offset-2 info-card push-bottom">
+              <div class="class-date">CLASS 07 (10/10/19)</div>
+              <h3>Events &amp; jQuery</h3>
+              <ul>
+                <li>Selecting elements with jQuery</li>
+                <li>jQuery methods</li>
+                <li>DOM Events</li>
+                <li>Event Listeners</li>
+              </ul>
+              <!-- <hr>
+              <h4>Materials</h4>
+              <ul>
+                <li><a href="../slides/JSD-07-events-jquery-slides.pdf">Class 07 Slides</a></li>
+                <li><a href="../resources/JSD-07-events-jquery-handout.pdf">Handout - Events &amp; jQuery</a></li>
+              </ul>
+              <hr>
+              <h4>Resources</h4>
+              <ul>
+                <li><a href="https://mdn.io/Document_Object_Model">MDN: Document Object Model (DOM)</a></li>
+                <li><a href="http://api.jquery.com">jQuery documentation</a></li>
+                <li><a href="http://stackoverflow.com/a/7286680">mouseover vs mouseenter</a></li>
+                <li><a href="https://learn.jquery.com/events/">jQuery events</a></li>
+                <li><a href="https://learn.jquery.com/events/handling-events/">jQuery: Handling events</a></li>
+                <li><a href="https://api.jquery.com/on/">jQuery <code>on()</code> method</a></li>
+                <li><a href="https://github.com/airbnb/javascript#jquery">AirBnb JavaScript Style Guide: jQuery</a></li>
+                <li><a href="https://remysharp.com/2017/12/15/is-jquery-still-relevant">Is jQuery Still Relevant?</a> (spoiler: YES!)</li>
+                <li><a href="https://www.youtube.com/watch?v=n1cKlKM3jYI">&#127909; Browser rendering flow (video)</a></li>
+                <li><a href="https://www.youtube.com/watch?v=80Mr2Z6Qikc&amp;list=PLWKjhJtqVAbmfoj2Th9fvxhHIeqFO7wOy&amp;index=42">&#127909; The DOM: What is the Document Object Model? (video)</a></li>
+                <li><a href="https://www.youtube.com/watch?v=i1rQi9Maem8&amp;index=43&amp;list=PLWKjhJtqVAbmfoj2Th9fvxhHIeqFO7wOy">&#127909; The DOM: Style in the Header, Script in the Footer (video)</a></li>
+                <li><a href="https://www.youtube.com/watch?v=ueb_YVfCfiI">&#127909; Introduction to jQuery (vs JavaScript) (video)</a></li>
+              </ul> -->
+            </div>
+          </div>
+        </div>
+			</div>
+		</div>
+
+ 		<!-- WEEK FIVE -->
+		<div class="container" id="week-five">
+      <div class="row">
+        <div class="col-md-2">
+          <div class="week-marker">Week 05</div>
+        </div>
+        <div class="col-md-10 col-xs-12 info-card push-bottom">
+          <div class="class-date">CLASS 08 (10/15/19)</div>
+					<h3>Advanced jQuery &amp; APIs</h3>
+					<ul>
+            <li>Event Delegation</li>
+            <li>Implicit Iteration</li>
+            <li>HTTP verbs</li>
+            <li>APIs</li>
+            <li>Ajax</li>
+          </ul>
+					<!-- <hr>
+					<h4>Materials</h4>
+					<ul>
+						<li><a href="../slides/JSD-08-advanced-jquery-slides.pdf">Class 08 Slides</a></li>
+						<li><a href="../resources/JSD-08-advanced-jquery-handout.pdf">Handout - Advanced jQuery, Ajax, & APIs</a></li>
+					</ul>
+					<hr>
+					<h4>Resources</h4>
+					<ul>
+            <li><a href="https://learn.jquery.com/events/event-delegation/">jQuery: Event delegation</a></li>
+            <li><a href="http://api.jquery.com/on/#direct-and-delegated-events">jQuery Direct and Delegated Events</a></li>
+            <li><a href="https://css-tricks.com/lodge/learn-jquery/10-explicit-vs-implicit-iteration/">Implicit vs Explicit Iteration in jQuery</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Application_programming_interface">Wikipedia: API</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Representational_state_transfer">Wikipedia: Representational state transfer (REST)</a></li>
+            <li><a href="https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm">Roy Fielding's dissertation laying out the principles of REST</a></li>
+            <li><a href="https://www.youtube.com/watch?v=7YcW25PHnAA">&#127909; Rest API concepts &amp; examples (video)</a></li>
+          </ul> -->
+        </div>
+
+        <div class="col-md-10 col-md-offset-2 info-card push-bottom">
+          <div class="class-date">CLASS 09 (10/17/19)</div>
+          <h3>Ajax &amp; APIs</h3>
+          <ul>
+            <li>HTTP</li>
+            <li>Creating a Fetch request</li>
+            <li>Using jQuery for an Ajax request</li>
+            <li>Code organization</li>
+          </ul>
+          <!-- <hr>
+          <h4>Materials</h4>
+          <ul>
+            <li><a href="../slides/JSD-09-ajax-apis-slides.pdf">Class 09 Slides</a></li>
+            <li><a href="../resources/JSD-09-ajax-apis-handout.pdf">Handout - Ajax &amp; APIs</a></li>
+          </ul>
+          <hr>
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="https://mdn.io/Fetch_API">MDN: Fetch API</a></li>
+            <li><a href="https://learn.jquery.com/ajax/">jQuery: Ajax</a></li>
+            <!-- <li><a href="https://api.jquery.com/jQuery.ajax/#jqXHR">jQuery: jqXHR object</a></li> -->
+            <!--<li><a href="https://www.sitepoint.com/use-jquerys-ajax-function/">Sitepoint: jQuery Ajax</a></li>
+            <li><a href="https://github.com/toddmotto/public-apis">List of public APIs to play with</a></li>
+            <li><a href="https://www.youtube.com/watch?v=3l13qGLTgNw">&#127909; What is Ajax? (video)</a></li>
+          </ul> -->
+				</div>
+			</div>
+		</div>
+
+    <!-- WEEK SIX -->
+		<div class="container" id="week-six">
+      <div class="row">
+        <div class="col-md-2">
+          <div class="week-marker">Week 06</div>
+        </div>
+        <div class="col-md-10 col-xs-12 info-card push-bottom">
+          <div class="class-date">CLASS 10 (10/22/19)</div>
+					<h3>Asynchronous JavaScript &amp; Callbacks</h3>
+					<ul>
+						<li>Passing and accepting functions as callbacks</li>
+						<li>Promises &amp; Fetch</li>
+					</ul>
+					<!-- <hr>
+					<h4>Materials</h4>
+					<ul>
+						<li><a href="../slides/JSD-10-async-callbacks-slides.pdf">Class 10 Slides</a></li>
+					</ul>
+					<hr>
+					<h4>Resources</h4>
+					<ul>
+            <li><a href="https://codeburst.io/javascript-what-the-heck-is-a-callback-aba4da2deced">What the heck is a callback?</a></li>
+            <li><a href="https://mdn.io/Promise">Promises (MDN)</a></li>
+            <li><a href="https://mdn.io/Fetch_API">Fetch (MDN)</a></li>
+            <li><a href="https://mdn.io/Using_promises">Using Promises</a></li>
+            <li><a href="https://mdn.io/Using_Fetch">Using Fetch</a></li>
+            <li><a href="https://pouchdb.com/2015/05/18/we-have-a-problem-with-promises.html">Understanding how Promises work</a></li>
+            <li><a href="https://www.getpostman.com">Postman</a>: an app for building and testing API requests and responses</li>
+            <li>&#127909; <a href="https://www.youtube.com/watch?v=GxyFlXbhdsY">Callback Functions in JavaScript (video)</a></li>
+					</ul> -->
+        </div>
+
+				<div class="col-md-10 col-md-offset-2 info-card push-bottom">
+					<div class="class-date">CLASS 11 (10/24/19)</div>
+					<h3>Advanced APIs</h3>
+					<ul>
+						<li>Geolocation</li>
+            <li>API requests and responses</li>
+            <li>Postman</li>
+					</ul>
+					<!-- <hr>
+					<h4>Materials</h4>
+					<ul>
+						<li><a href="../slides/JSD-11-advanced-apis-slides.pdf">Class 11 Slides</a></li>
+						<li><a href="../resources/JSD-11-advanced-apis-handout.pdf">Handout - Advanced APIs</a></li>
+					</ul>
+					<hr>
+					<h4>Resources</h4>
+					<ul>
+						<li><a href="https://www.flickr.com/services/api/">Flickr API documentation</a></li>
+            <li><a href="https://www.flickr.com/services/apps/create/">Flickr Request an API Key page</a></li>
+            <li><a href="https://www.flickr.com/services/apps/by/me">Flickr Apps By You page</a> (lists your app info and API key)</li>
+            <li><a href="https://mdn.io/Navigator">The Navigator object (MDN)</a></li>
+            <li><a href="https://mdn.io/Using_geolocation">Using geolocation (MDN)</a></li>
+						<li><a href="https://api.jquery.com/jQuery.each/">jQuery.each() method</a></li>-->
+						<!-- <li><a href="https://developer.chrome.com/extensions/tut_oauth">OAuth tutorial (Google Chrome developer docs)</a></li>
+						<li><a href="https://oauth.net">All about OAuth (oauth.net)</a></li>
+						<li><a href="https://www.youtube.com/watch?v=tFYrq3d54Dc">&#127909; OAuth: A Tale of Two Servers (video)</a></li>-->
+					<!--</ul> -->
+				</div>
+      </div>
+    </div>
+
+    <!-- WEEK SEVEN -->
+		<div class="container" id="week-seven">
+			<div class="row">
+        <div class="col-md-2">
+          <div class="week-marker">Week 07</div>
+        </div>
+        <div class="col-md-10 col-xs-12 info-card push-bottom">  
+					<div class="class-date">CLASS 12 (10/29/19)</div>
+					<h3>In-class lab: Feedr</h3>
+					<ul>
+            <li>Project 2 overview &amp; lab</li>
+            <li>Template literals</li>
+					</ul>
+					<!-- <hr>
+ 					<h4>Materials</h4>
+					<ul>
+						<li><a href="../slides/JSD-12-in-class-lab-feedr-slides.pdf">Class 12 Slides</a></li>
+					</ul>
+					<hr>
+					<h4>Resources</h4>
+					<ul>
+						<li><a href="https://pages.git.generalassemb.ly/vodnik/JSD16/pages/feedr.html">Project 2: Feedr description</li>
+						<li><a href="https://git.generalassemb.ly/vodnik/feedr">Feedr repo to fork</a></li>
+            <li><a href="https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa">JSON Formatter</a> extension for Chrome</li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS">Cross Origin Resource Sharing (CORS)</a></li>
+            <li><a href="https://www.joshmorony.com/dealing-with-cors-cross-origin-resource-sharing-in-ionic-applications/">Dealing with CORS</a> (specific to Ionic framework, but contains some useful explanations)
+            <li><a href="https://stackoverflow.com/a/3840118/2337064">What is JSON-P?</a></li>
+            <li><a href="https://medium.com/front-end-hacking/template-literals-in-es6-trimming-the-fat-46da5ed41e81">Template Literals in ES6</a></li>
+            <li><a href="https://css-tricks.com/template-literals/">Template Literals</a></li>
+            <li><a href="https://codeburst.io/taming-huge-collections-of-dom-nodes-bebafdba332">Taming Huge Collections of DOM Nodes</a></li>
+          </ul> -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- UNIT 3 -->
+  <h2 class="push-top push-bottom">Unit 3: Persisting Data + Advanced Topics</h2>
+
+  <!-- WEEK SEVEN (CONTINUED) -->
+  <section class="light-blue-bg push-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 col-md-offset-2 info-card push-bottom">
+					<div class="class-date">CLASS 13 (10/31/19)</div>
+					<h3>Prototypal Inheritance</h3>
+					<ul>
+            <li>Object-oriented code</li>
+            <li>Constructor functions</li>
+            <li>Prototypes</li>
+            <li>Classes</li>
+					</ul>
+          <!-- <hr>
+          <h4>Materials</h4>
+          <ul>
+            <li><a href="../slides/JSD-13-prototypal-inheritance-slides.pdf">Class 13 Slides</a></li>
+						<li><a href="../resources/JSD-13-prototypal-inheritance-handout.pdf">Handout - Prototypal inheritance</a></li>
+          </ul>
+					<hr>
+					<h4>Resources</h4>
+					<ul>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain">Inheritance and the Prototype Chain (MDN)</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes">Classes (MDN)</a></li>
+            <li><a href="https://youtu.be/G6l5CHl67HQ">&#127909; Prototypal Inheritance in 1 Minute (video)</a></li>
+					</ul> -->
+        </div>
+      </div>
+		</div>
+
+
+    <!-- WEEK EIGHT -->
+		<div class="container" id="week-eight">
+			<div class="row">
+        <div class="col-md-2">
+          <div class="week-marker">Week 08</div>
+        </div>
+        <div class="col-md-10 col-xs-12 info-card push-bottom">
+          <div class="class-date">CLASS 14 (11/05/19)</div>
+          <h3>Context &amp; <code>this</code></h3>
+          <ul>
+            <li>Closures</li>
+            <li>IIFEs</li>
+            <li>Module pattern</li>
+            <li>Context and <code>this</code></li>
+          </ul>
+         <!-- <hr>
+          <h4>Materials</h4>
+          <ul>
+            <li><a href="../slides/JSD-14-closures-this-slides.pdf">Class 14 Slides</a></li>
+            <li><a href="../resources/JSD-14-closures-this-handout.pdf">Handout - Closures &amp; this</a></li>
+          </ul>
+         <hr>
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="https://stackoverflow.com/questions/111102/how-do-javascript-closures-work">How do JavaScript closures work? (StackOverflow)</a></li>
+            <li>Todd Motto on <a href="https://toddmotto.com/everything-you-wanted-to-know-about-javascript-scope/">JavaScript scope</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures">Closures in JavaScript (MDN)</a></li>
+            <li><a href="https://www.youtube.com/watch?v=yiEeiMN2Khs">&#127909; JavaScript Closures 101 (video)</a></li>
+            <li><a href="https://www.w3.org/wiki/JavaScript_best_practices#Avoid_globals">JavaScript Best Practices - Avoid Globals (W3)</a></li>
+            <li><a href="https://www.sitepoint.com/currying-in-functional-javascript/">Currying in Functional JavaScript</a></li> 
+            <li><a href="https://scotch.io/tutorials/closures-and-currying-in-javascript">Closures &amp; Currying in JavaScript</a></li> 
+            <li><a href="https://addyosmani.com/resources/essentialjsdesignpatterns/book/#modulepatternjavascript">The Module Pattern</a></li>
+            <li><a href="https://eloquentjavascript.net/10_modules.html">Eloquent JavaScript, Chapter 10: Modules</a></li>
+            <li><a href="https://css-tricks.com/how-do-you-structure-javascript-the-module-pattern-edition/">Module pattern example (css-tricks.com)</a></li>
+            <li><a href="https://www.youtube.com/watch?v=cQRKE5QIB6Q">&#127909; The basic module pattern (video)</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this"><code>this</code> (MDN)</a></li>
+          </ul>
+          <hr>
+          <h4>Additional practice (optional)</h4>
+          <ul>
+            <li>
+              <strong><code>starter-code</code> &gt; <code>optional</code> &gt; <code>person-module</code></strong>
+              <p>Build a module that creates people objects by following the steps in the <code>app.js</code> file.</p>
+            </li>
+            <li>
+              <strong><code>starter-code</code> &gt; <code>optional</code> &gt; <code>iife-exercise</code></strong>
+              <p>Build a function that logs the value of a counter variable, using both the <code>let</code> and <code>var</code> keywords. A classic JavaScript brain teaser.</p>
+            </li> -->
+<!--              <li>
+              <strong><code>starter-code</code> &gt; <code>9-currying-lab</code> folder</strong>
+              <p>Follow the steps in the <code>app.js</code> file to build a function factory that uses currying to create sales tax calculators with different sales tax rates built in.</p>
+            </li>
+          </ul> -->
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-md-10 col-md-offset-2 info-card push-bottom">
+          <div class="class-date">CLASS 15 (11/07/19)</div>
+					<h3>Introduction to CRUD &amp; Firebase</h3>
+					<ul>
+						<li>CRUD &amp; HTTP</li>
+						<li>Firebase</li>
+					</ul>
+					<!-- <hr>
+					<h4>Materials</h4>
+					<ul>
+						<li><a href="../slides/JSD-15-crud-firebase-slides.pdf">Class 15 Slides</a></li>
+						<li><a href="../resources/JSD-15-crud-firebase-handout.pdf">Handout - Firebase</a></li>
+					</ul>
+					<hr>
+					<h4>Resources</h4>
+					<ul>
+						<li><a href="https://firebase.google.com/docs/reference/js/">Firebase API reference</a></li>
+						<li><a href="https://firebase.google.com/docs/reference/js/firebase.database.Reference"><code>firebase.database.Reference</code> API documentation</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Using_data_attributes">Using data attributes (MDN)</a></li>
+            <li><a href="https://thepowerofserverless.info/services.html">Comparison of Firebase and alternative services</a></li>
+						<li><a href="https://www.youtube.com/watch?v=k1D0_wFlXgo&amp;index=1&amp;list=PLl-K7zZEsYLmnJ_FpMOZgyg6XcIGBu2OX">&#127909; Getting Started with Firebase on the Web (video)</a></li>
+						<li><a href="https://www.youtube.com/watch?v=noB98K6A0TY&amp;list=PLl-K7zZEsYLmnJ_FpMOZgyg6XcIGBu2OX&amp;index=2">&#127909; Getting Started with the Firebase Realtime Database on the Web, Part 1 (video)</a></li>
+						<li><a href="https://www.youtube.com/watch?v=dBscwaqNPuk&amp;list=PLl-K7zZEsYLmnJ_FpMOZgyg6XcIGBu2OX&amp;index=3">&#127909; Getting Started with the Firebase Realtime Database on the Web, Part 2 (video)</a></li>
+					</ul> -->
+        </div>
+			</div>
+		</div>
+  </section>
+
+  <!-- UNIT 4 -->
+
+  <h2 class="push-top push-bottom">Unit 4: Building + Deploying Your App</h2>
+  <section class="light-blue-bg push-top">
+		<!-- WEEK NINE -->
+		<div class="container" id="week-nine">
+			<div class="row">
+				<div class="col-md-2">
+          <div class="week-marker">Week 09</div>
+        </div>
+				<div class="col-md-10 col-xs-12 info-card push-bottom">
+					<div class="class-date">CLASS 16 (11/12/19)</div>
+					<h3>Deploying Your App</h3>
+					<ul>
+            <li>Transpiling with Babel</li>
+            <li>Polyfilling</li>
+            <li>Minifying</li>
+            <li>Linting</li>
+						<li>Deploying to Firebase Hosting</li>
+					</ul>
+					<!-- <hr>
+					<h4>Materials</h4>
+					<ul>
+						<li><a href="../slides/JSD-16-deploying-slides.pdf">Class 16 Slides</a></li>
+						<li><a href="../resources/JSD-16-deploying-handout.pdf">Handout - Deploying Your App</a></li>
+					</ul>
+					<hr>
+					<h4>Resources</h4>
+					<ul>
+            <li><a href="https://github.com/svodnik/ajaxproxy">Ajax Proxy repo</a></li>
+            <li><a href="https://eslint.org/demo">ESLint</a></li>
+            <li><a href="https://www.npmjs.com/package/uglify-js">Uglify JS</a> (minifier)</li>
+						<li><a href="https://babeljs.io">About Babel</a></li>
+            <li><a href="https://babeljs.io/docs/setup/#installation">Using Babel</a></li>
+            <li><a href="https://tylermcginnis.com/videos/compiling-polyfills/">Compiling vs Polyfills</a> (includes a video)</li>
+            <li><a href="https://stackshare.io/stackups/grunt-vs-gulp-vs-webpack">Comparison of JavaScript build tools</a></li>
+            <li><a href="https://stackoverflow.com/questions/37482366/is-it-safe-to-expose-firebase-apikey-to-the-public">Why it's safe to expose your Firebase API key to the public (Stack Overflow)</a></li>
+            <li><a href="https://firebase.google.com/support/guides/launch-checklist">Firebase launch checklist</a></li>
+            <!-- <li><a href="https://addyosmani.com/resources/essentialjsdesignpatterns/book/#revealingmodulepatternjavascript">The Revealing Module Pattern</a></li> -->
+            <!--<li><a href="https://css-tricks.com/going-from-dumb-little-idea-to-real-website-in-like-10-minutes/">Idea to website in 10 min with serverless architecture</a></li>
+            <li><a href="https://pages.github.com">GitHub Pages overview</a> (includes a video)</li>
+						<li><a href="https://www.youtube.com/watch?v=jsRVHeQd5kU&amp;index=13&amp;list=PLl-K7zZEsYLmOF_07IayrTntevxtbUxDL">&#127909; Introducing Firebase Hosting (video)</a></li>
+						<li><a href="https://www.youtube.com/watch?v=meofoNuK3vo&amp;list=PLl-K7zZEsYLmnJ_FpMOZgyg6XcIGBu2OX&amp;index=6">&#127909; Getting Started with the Firebase Hosting on the Web (video)</a></li>
+					</ul> -->
+				</div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-10 col-md-offset-2 info-card push-bottom">
+					<div class="class-date">CLASS 17 (11/14/19)</div>
+					<h3>React</h3>
+          <ul>
+            <li>MVC</li>
+            <li>Thinking in React</li>
+            <li>Components</li>
+          </ul>
+          <!-- <hr>
+          <h4>Materials</h4>
+          <ul>
+            <li><a href="../slides/JSD-17-react-slides.pdf">Class 17 Slides</a></li>
+            <li><a href="../resources/JSD-17-react-handout.pdf">Handout - React</a></li>
+          </ul>
+          <hr>
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi">React Developer Tools extension for Chrome</a></li>
+            <li><a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer">LiveServer extension for VS Code</a></li>
+            <li><a href="https://reactjs.org/tutorial/tutorial.html">Intro to React tutorial</a></li>
+            <li><a href="https://facebook.github.io/create-react-app/docs/getting-started">Installing and working with <code>create-react-app</code></a></li>
+            <li><a href="https://css-tricks.com/react-state-from-the-ground-up/">React state from the ground up</a></li>
+            <li><a href="https://css-tricks.com/intro-firebase-react/">Intro to Firebase and React</a></li>
+          </ul> -->
+				</div>
+      </div>
+		</div>
+
+
+		<!-- WEEK TEN -->
+		<div class="container" id="week-ten">
+			<div class="row">
+				<div class="col-md-2">
+					<div class="week-marker">Week 10</div>
+        </div>
+				<div class="col-md-10 col-xs-12 info-card push-bottom">
+					<div class="class-date">CLASS 18 (11/19/19)</div>
+					<h3>Final Project Lab</h3>
+          <!-- <h4>Materials</h4>
+          <ul>
+            <li><a href="../slides/JSD-18-final-project-lab-slides.pdf">Class 18 Slides</a></li>
+          </ul> -->
+        </div>
+
+				<div class="col-md-10 col-md-offset-2 info-card push-bottom">
+					<div class="class-date">CLASS 19 (11/21/19)</div>
+          <h3>Final Presentations</h3>
+          <!-- <hr>
+          <h4>Materials</h4>
+          <ul>
+            <li><a href="../slides/JSD-19-final-presentations-slides.pdf">Class 19 Slides</a></li>
+          </ul>
+          <hr>
+          <h4>Resources</h4>
+          <ul>
+            <!-- <li><a href="https://css-tricks.com/javascript-learning-landscape-2018/">JS Learning Landscape 2018</a></li> -->
+            <!--<li><a href="https://medium.com/@kamranahmedse/modern-frontend-developer-in-2018-4c2072fa2b9c">Modern Front End Developer Roadmap (updated for 2019)</a></li>
+            <li><a href="https://css-tricks.com/developer-roadmaps/">Developer Roadmaps (a collection)</a></li>
+            <li><a href="https://frontendmasters.com/books/front-end-handbook/2019/">Front-End Handbook 2019</a></li>
+            <li><a href="https://css-tricks.com/a-funny-thing-happened-on-the-way-to-the-javascript/">Working with obstacles to continued self-education</a></li>
+          </ul> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- WEEK ELEVEN -->
+  <!-- <div class="container" id="week-eleven">
+    <div class="row">
+      <div class="col-md-2">
+        <div class="week-marker">Week 11</div>
+      </div>
+      <div class="col-md-10 col-xs-12 info-card push-bottom">
+        <div class="class-date">CLASS 19 (04/22/19)</div>
+
+      </div>
+		</div> -->
+	</section>
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<p class="col-md-12">
+					Based on a site assembled by <a href="https://github.com/cheshireoctopus">Chandler Moisen</a> and <a href="https://www.linkedin.com/in/maria-stegner-2333b14">Maria Stegner</a> for General Assembly's <a href="https://generalassemb.ly/education/front-end-web-development">Frontend Web Development</a> part-time course. Code for the original site is at <a href="https://github.com/cheshireoctopus/gafewd-portal">https://github.com/cheshireoctopus/gafewd-portal</a> - feel free to fork for your own class.
+				</p>
+			</div>
+		</div>
+	</footer>
+
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<script>
+		$(function() {
+			$('a[href*="#"]:not([href="#"])').click(function() {
+				if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+					var target = $(this.hash)
+					target = target.length ? target : $('[name=' + this.hash.slice(1) +']')
+					if (target.length) {
+						$('html, body').animate({
+							scrollTop: target.offset().top - 55
+						}, 1000)
+						return false
+					}
+				}
+			})
+		})
+	</script>
+
+</body>
+</html>
