@@ -47,7 +47,7 @@
                 
                 <p>Open your terminal (<code>Applications &gt; Utilities &gt; Terminal</code>), paste the following command, and hit enter:</p>
                 
-                <pre><code class="bash language-bash">ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl</code></pre>
+                <pre><code class="bash language-bash">sudo ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl</code></pre>
                 
                 <p>c. <strong>Atom</strong></p>
                 
@@ -100,8 +100,13 @@ git config --global user.email "YOUR EMAIL ADDRESS"</code></pre>
                 
                 <pre><code class="bash language-bash">npm install npm -g</code></pre>
                 
-                <p>When you’re done, raise your hand and ask a member of the instructional team to verify that the installation was successful.
-                Then complete the instructions in the section <em>2. Setting up GitHub</em> below.</p></li>
+                <p>If you receive an error message titled <code>EACCES</code>, enter the following command to change directory permissions to install Node and npm without the need to use sudo:
+                  <pre><code class="bash language-bash">sudo chown -R $(whoami) /usr/local/lib/node_modules</code></pre>
+
+                <p>Then repeat the previous command, which should finish without an error.</p>
+
+                <p>After successfully completing the above steps, continue with <em>2. Set up GitHub Enterprise</em> below.</p></li>
+
                 </ol>
             </div>
 
